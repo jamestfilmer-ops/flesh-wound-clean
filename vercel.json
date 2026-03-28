@@ -1,4 +1,13 @@
 {
-  "cleanUrls": false,
-  "trailingSlash": false
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/stories", "destination": "/stories/index.html" },
+    { "source": "/think-pieces", "destination": "/think-pieces/index.html" },
+    { "source": "/poems", "destination": "/poems/index.html" },
+    { "source": "/about", "destination": "/about/index.html" },
+    { "source": "/stories/:slug", "destination": "/stories/:slug.html" },
+    { "source": "/think-pieces/:slug", "destination": "/think-pieces/:slug.html" },
+    { "source": "/poems/:slug", "destination": "/poems/:slug.html" }
+  ]
 }
