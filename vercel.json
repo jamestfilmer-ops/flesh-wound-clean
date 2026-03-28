@@ -1,10 +1,4 @@
 {
-  "cleanUrls": true,
-  "trailingSlash": false,
-  "rewrites": [
-    { "source": "/stories/:slug", "destination": "/stories/:slug.html" },
-    { "source": "/think-pieces/:slug", "destination": "/think-pieces/:slug.html" },
-    { "source": "/poems/:slug", "destination": "/poems/:slug.html" },
-    { "source": "/about/:slug", "destination": "/about/:slug.html" }
-  ]
+  "cleanUrls": false,
+  "trailingSlash": false
 }
