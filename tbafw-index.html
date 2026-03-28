@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>'Tis but a Flesh Wound — An Blog by Isaac Lindell</title>
+  <meta name="description" content="Short stories, think pieces, and poems. A literary journal written from a quiet table in an old pub." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="'Tis but a Flesh Wound" href="/feed.xml" />
+  <style>
+    /* ── HOMEPAGE EXTRAS ── */
+
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      padding: 0 0 12px;
+      margin: 48px 0 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .section-header-label {
+      font-family: 'Cinzel', serif;
+      font-size: 9px;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: var(--accent1);
+    }
+
+    .section-header-link {
+      font-family: 'Cinzel', serif;
+      font-size: 9px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--muted);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1px;
+      transition: color 0.2s;
+    }
+    .section-header-link:hover { color: var(--accent2); }
+
+    /* 2-col featured row */
+    .featured-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border-left: 1px solid var(--border);
+      border-top: 1px solid var(--border);
+    }
+
+    .featured-card {
+      padding: 28px 24px;
+      border-right: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      background: var(--bg);
+      transition: background 0.2s;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.4s ease, transform 0.4s ease, background 0.2s;
+    }
+    .featured-card.visible { opacity: 1; transform: translateY(0); }
+    .featured-card:hover { background: #f2f2ef; }
+
+    .featured-card-eyebrow {
+      font-family: 'Cinzel', serif;
+      font-size: 9px;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--accent2);
+      margin-bottom: 10px;
+    }
+
+    .featured-card-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: 26px;
+      color: var(--primary);
+      line-height: 1.15;
+      margin-bottom: 12px;
+    }
+
+    .featured-card-excerpt {
+      font-family: 'Lora', serif;
+      font-size: 13px;
+      font-style: italic;
+      color: #777;
+      line-height: 1.65;
+      margin-bottom: 14px;
+      max-width: 48ch;
+    }
+
+    .featured-card-meta {
+      font-family: 'Cinzel', serif;
+      font-size: 9px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    /* divider rule between sections */
+    .section-gap { margin-top: 0; }
+
+    @media (max-width: 768px) {
+      .featured-row { grid-template-columns: 1fr; }
+      .section-header { margin-top: 36px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header" role="banner">
+    <div class="masthead-inner">
+      <div class="site-branding">
+        <a href="index.html" class="site-name">'Tis but a Flesh Wound</a>
+        <span class="site-subtitle">An Blog by Isaac Lindell</span>
+      </div>
+      <nav class="site-nav" role="navigation" aria-label="Main navigation">
+        <a href="think-pieces/index.html">Think Pieces</a>
+        <a href="stories/index.html">Stories</a>
+        <a href="poems/index.html">Poems</a>
+        <a href="about/index.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="homepage-wrap">
+
+    <!-- ── HERO ── -->
+    <section class="hero" aria-label="Featured piece">
+      <div class="hero-text">
+        <div class="hero-eyebrow">Featured Story</div>
+        <h1 class="hero-title">June 14, '66</h1>
+        <p class="hero-excerpt">A letter home from Vietnam. Booby got splintered to hell last night in an ambush, alongside Casper and Tinsel. It's hard to use their nicknames now. Feels like that's the only way we give life to each other.</p>
+        <div class="hero-meta">Story &nbsp;·&nbsp; 2022</div>
+        <a href="stories/vietnam-story.html" class="read-link" style="display:inline-block;margin-top:16px;">Read →</a>
+      </div>
+      <div class="hero-accent" aria-hidden="true">
+        <blockquote class="pull-quote-hero">
+          "It looks like Earth is a dark world for which God punched a few needle holes to reveal the white glory of the heavens."
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ── STORIES ── -->
+    <div class="section-header">
+      <span class="section-header-label">Stories</span>
+      <a href="stories/index.html" class="section-header-link">All Stories →</a>
+    </div>
+
+    <div class="featured-row">
+      <article class="featured-card">
+        <a href="stories/hunt-for-sam.html">
+          <div class="featured-card-eyebrow">Story · Western</div>
+          <h2 class="featured-card-title">The Hunt for Sam "Lead Mouth" Rockwell</h2>
+          <p class="featured-card-excerpt">This little town was your honey hole for sin. A sheriff, a devil, and the open desert between them.</p>
+          <div class="featured-card-meta">2022</div>
+        </a>
+      </article>
+      <article class="featured-card">
+        <a href="stories/dirt.html">
+          <div class="featured-card-eyebrow">Story</div>
+          <h2 class="featured-card-title">DIRT</h2>
+          <p class="featured-card-excerpt">The best. That's what he wanted — nothing subpar, nothing lesser; only prestige, simply masterclass.</p>
+          <div class="featured-card-meta">Nov 16, 2025</div>
+        </a>
+      </article>
+    </div>
+
+    <div class="card-grid section-gap">
+      <article class="card">
+        <a href="stories/cereal-murder.html">
+          <div class="card-genre">Story · Humor</div>
+          <h2 class="card-title">Cereal Killer</h2>
+          <div class="card-date">2022</div>
+        </a>
+      </article>
+      <article class="card">
+        <a href="stories/greatest-beer-run.html">
+          <div class="card-genre">Story · Humor</div>
+          <h2 class="card-title">A Plan for the Greatest Beer Run of All Time</h2>
+          <div class="card-date">May 4, 2025</div>
+        </a>
+      </article>
+      <article class="card">
+        <a href="stories/index.html">
+          <div class="card-genre" style="color:var(--muted);">Archive</div>
+          <h2 class="card-title" style="color:var(--muted);font-size:16px;">All Stories →</h2>
+          <div class="card-date">&nbsp;</div>
+        </a>
+      </article>
+    </div>
+
+    <!-- ── THINK PIECES ── -->
+    <div class="section-header">
+      <span class="section-header-label">Think Pieces</span>
+      <a href="think-pieces/index.html" class="section-header-link">All Think Pieces →</a>
+    </div>
+
+    <div class="featured-row">
+      <article class="featured-card">
+        <a href="think-pieces/goodness-think-piece.html">
+          <div class="featured-card-eyebrow">Essay · Philosophy</div>
+          <h2 class="featured-card-title">Goodness: A Layman's Interpretation</h2>
+          <p class="featured-card-excerpt">What does it mean for something to be good? A framework built on four pillars: Truth, Beauty, Justice, and Sacrifice.</p>
+          <div class="featured-card-meta">2022</div>
+        </a>
+      </article>
+      <article class="featured-card">
+        <a href="think-pieces/rip-charlie-kirk.html">
+          <div class="featured-card-eyebrow">Commentary · Cultural</div>
+          <h2 class="featured-card-title">RIP Charlie Kirk</h2>
+          <p class="featured-card-excerpt">A cultural autopsy of a figure who mistook volume for conviction and a microphone for a pulpit.</p>
+          <div class="featured-card-meta">Sep 10, 2025</div>
+        </a>
+      </article>
+    </div>
+
+    <!-- ── POEMS ── -->
+    <div class="section-header">
+      <span class="section-header-label">Poems</span>
+      <a href="poems/index.html" class="section-header-link">All Poems →</a>
+    </div>
+
+    <div class="card-grid section-gap">
+      <article class="card">
+        <a href="poems/don-quixote-poem.html">
+          <div class="card-genre">Poem · Sonnet</div>
+          <h2 class="card-title">The Awaiting of Don Quixote</h2>
+          <div class="card-date">2022</div>
+        </a>
+      </article>
+      <article class="card">
+        <a href="poems/sacrifice-poem.html">
+          <div class="card-genre">Poem</div>
+          <h2 class="card-title">Sacrifice</h2>
+          <div class="card-date">2022</div>
+        </a>
+      </article>
+      <article class="card">
+        <a href="poems/index.html">
+          <div class="card-genre" style="color:var(--muted);">Archive</div>
+          <h2 class="card-title" style="color:var(--muted);font-size:16px;">All Poems →</h2>
+          <div class="card-date">&nbsp;</div>
+        </a>
+      </article>
+    </div>
+
+  </main>
+
+  <div class="newsletter-bar">
+    <span class="newsletter-label">Get new writing delivered.</span>
+    <form class="newsletter-form" novalidate>
+      <input class="newsletter-input" type="email" placeholder="your@email.com" aria-label="Email address" />
+      <button class="newsletter-btn" type="submit">Subscribe</button>
+    </form>
+  </div>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-name">'Tis but a Flesh Wound</div>
+    <div class="footer-tagline">No ads · No tracking · Just writing</div>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="think-pieces/index.html">Think Pieces</a>
+      <a href="stories/index.html">Stories</a>
+      <a href="poems/index.html">Poems</a>
+      <a href="about/index.html">About</a>
+    </nav>
+    <hr class="footer-divider" />
+    <div class="footer-copy">&copy; Isaac Lindell</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
